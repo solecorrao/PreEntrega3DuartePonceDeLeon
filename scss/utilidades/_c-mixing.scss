@@ -1,0 +1,36 @@
+@mixin bordes-botones {
+    width: 150px;
+    margin: 40px auto;
+    border: 2px solid $color-tres;
+    border-radius: 20px;
+}
+
+@mixin boton-volver-arriba {
+    position: sticky;
+    bottom: 20px;
+    left: 80%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    background: $color-dos;
+    opacity: 85%;
+    border: solid;
+    color: #00ffff3d;
+}
+
+@mixin parrafos {
+    text-align: justify;
+    font-size: $tamanio-regular;
+}
+
+@mixin propiedades-flex{
+    display: flex;
+}
+
+@mixin titulo{
+    font-size: $tamanio-nor-titulo;
+    margin: 20px 0;
+}

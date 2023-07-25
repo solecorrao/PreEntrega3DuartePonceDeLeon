@@ -1,0 +1,47 @@
+@import "../utilidades/a-variables";
+@import "../utilidades/c-mixing";
+@import "../utilidades/b-extend";
+
+
+main {
+    h1 {
+        font-size: $tamanio-nor-titulo;
+    }
+
+    .portfolio {
+        display: flex;
+        flex-direction: column;
+
+        .proyecto {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 10px 0;
+        }
+    }
+
+    .proyecto-ads {
+        iframe {
+            border: 5px solid $color-tres;
+            border-radius: 20px;
+            margin: 10px 0;
+        }
+    }
+}
+
+@media screen and (min-width: 600px) {
+    main .portfolio h2 {
+        margin: 20px 0px;
+    }
+
+    main .portfolio img {
+        display: flex;
+        justify-content: space-around;
+        flex: 1;
+        flex-wrap: wrap;
+    }
+
+    main .portfolio img {
+        width: 17rem;
+    }
+}

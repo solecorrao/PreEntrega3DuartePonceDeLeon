@@ -1,0 +1,447 @@
+@charset "UTF-8";
+main .containergrid {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  color: #E1DFDF; }
+
+body,
+header {
+  background-color: #202020;
+  min-width: 25rem; }
+
+header {
+  position: sticky;
+  top: 0px;
+  z-index: 500;
+  margin: 0 auto;
+  background-color: #00EAD0;
+  display: flex;
+  justify-content: start; }
+  header .logo-personal img {
+    height: 50px; }
+
+h2,
+h3 {
+  font-family: 'Poppins';
+  font-size: 1.8rem;
+  color: #E1DFDF; }
+
+.img-general, main .containergrid .gift-sobre-mi {
+  margin: 10px 0px;
+  border: 5px solid #00EAD0;
+  border-radius: 20px;
+  height: 15rem; }
+
+main .ir-a-contactar {
+  width: 150px;
+  margin: 40px auto;
+  border: 2px solid #00EAD0;
+  border-radius: 20px; }
+
+a {
+  text-decoration: none;
+  color: #E1DFDF; }
+
+main .ir-a-contactar:hover {
+  background-color: #00EAD0;
+  border: none; }
+
+main .ir-a-contactar a:hover {
+  font-weight: bold;
+  color: #202020; }
+
+main .boton-arriba {
+  position: sticky;
+  bottom: 20px;
+  left: 80%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  background: #202020;
+  opacity: 85%;
+  border: solid;
+  color: #00ffff3d; }
+  main .boton-arriba a {
+    text-align: center;
+    position: relative;
+    color: #E1DFDF; }
+
+footer p {
+  text-align: center;
+  font-size: 0.7rem; }
+
+main {
+  max-width: 20rem;
+  margin: 0 auto; }
+
+main .containergrid {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center; }
+
+main .presentacion .holamundo {
+  margin: 20px 0px 1px; }
+  main .presentacion .holamundo h1 {
+    font-size: 2.5rem;
+    text-shadow: 1px 1px 15px #00EAD0;
+    line-height: 1.9rem; }
+    main .presentacion .holamundo h1 span {
+      font-size: 1.3rem;
+      line-height: 0.5rem;
+      display: flex;
+      justify-content: center;
+      margin: 3px 0px 15px; }
+  main .presentacion .holamundo h1::first-letter {
+    font-family: 'Poppins';
+    font-size: 3rem;
+    color: #00EAD0; }
+  main .presentacion .holamundo p {
+    line-height: 1.4rem;
+    font-size: 1.4rem;
+    text-align: center;
+    margin: 20px; }
+
+main .presentacion .fotopresentacion .img_uno {
+  width: 100%; }
+
+main .presentacion .fotopresentacion .img_dos {
+  display: none; }
+
+/* ---------------------- propuesta de valor  */
+main .propuesta {
+  border: 1px solid #00EAD0;
+  border-radius: 12px;
+  margin: 10px 30px;
+  background: #353030b3; }
+  main .propuesta p {
+    text-align: justify;
+    font-size: 1rem;
+    margin: 20px 20px; }
+
+main .img-der-e-tex-izq {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column-reverse; }
+  main .img-der-e-tex-izq .texto-publico-objetivo {
+    display: flex;
+    align-items: center; }
+    main .img-der-e-tex-izq .texto-publico-objetivo p {
+      text-align: justify;
+      font-size: 1rem;
+      margin: 20px 25px; }
+
+@media screen and (min-width: 600px) {
+  header {
+    justify-content: center; }
+  main {
+    max-width: 50rem;
+    margin: 0 auto; }
+  .img-general, main .containergrid .gift-sobre-mi {
+    height: 20rem; }
+  main .presentacion {
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 622px; }
+  main .presentacion .holamundo {
+    width: 18rem;
+    position: relative;
+    left: 70px;
+    margin: 0; }
+  main .presentacion .holamundo h1 {
+    text-align: center;
+    font-size: 3.5rem;
+    line-height: 2.8rem;
+    margin-bottom: 17px; }
+  main .presentacion .holamundo h1 span {
+    display: flex;
+    justify-content: center;
+    margin: 4px; }
+  main .presentacion .holamundo h1::first-letter {
+    font-size: 4rem; }
+  main .presentacion .holamundo p {
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 1.5rem;
+    margin: 0px; }
+  main .presentacion .fotopresentacion {
+    width: 280px; }
+  main .presentacion .fotopresentacion img {
+    height: 400px; }
+  main .presentacion .fotopresentacion .img_uno {
+    display: none; }
+  main .presentacion .fotopresentacion .img_dos {
+    display: block;
+    justify-content: center; }
+  /* ----------------¿Lo necesitas ? ----------- */
+  main .img-izq-tex-der p {
+    margin: 20px 5px 20px 15px; }
+  main .img-izq-tex-der img {
+    margin: 20px 15px 20px 5px; } }
+
+main .containergrid {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center; }
+
+main .containergrid h1 {
+  font-size: 2.5rem;
+  margin: 20px 0; }
+
+main .containergrid p {
+  text-align: justify;
+  font-size: 1rem; }
+
+main .containergrid .gift-sobre-mi {
+  border: none; }
+
+@media screen and (min-width: 600px) {
+  main {
+    width: 600px;
+    padding: 0 20px; } }
+
+main .containergrid {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center; }
+
+main .servicios {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0; }
+  main .servicios .iconos-servicios {
+    width: 100%; }
+
+main .servicios-linea p {
+  text-align: justify;
+  font-size: 1rem; }
+
+@media screen and (min-width: 600px) {
+  main {
+    width: 500px;
+    padding: 0 20px; } }
+
+main .containergrid {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center; }
+
+main h1 {
+  font-size: 2.5rem; }
+
+main .portfolio {
+  display: flex;
+  flex-direction: column; }
+  main .portfolio .proyecto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0; }
+
+main .proyecto-ads iframe {
+  border: 5px solid #00EAD0;
+  border-radius: 20px;
+  margin: 10px 0; }
+
+@media screen and (min-width: 600px) {
+  main .portfolio h2 {
+    margin: 20px 0px; }
+  main .portfolio img {
+    display: flex;
+    justify-content: space-around;
+    flex: 1;
+    flex-wrap: wrap; }
+  main .portfolio img {
+    width: 17rem; } }
+
+main .containergrid {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center; }
+
+main .formulario {
+  border: 3px solid #00EAD0;
+  border-radius: 20px;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  margin: 20px auto; }
+  main .formulario fieldset {
+    border: none; }
+    main .formulario fieldset legend {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1rem;
+      font-weight: bolder;
+      padding: 10px 10px; }
+    main .formulario fieldset .campos input,
+    main .formulario fieldset textarea {
+      width: 18rem;
+      height: auto;
+      border: 2px solid #00EAD0;
+      border-radius: 10px;
+      margin: 5px;
+      color: #202020;
+      outline: none;
+      padding: 0.3rem; }
+  main .formulario .botones-contacto .boton-submit {
+    width: 5rem;
+    background: #202020;
+    margin: 0 0 30px;
+    color: #00EAD0;
+    border: none;
+    text-transform: uppercase; }
+  main .formulario .botones-contacto .boton-submit:hover {
+    color: #202020;
+    font-weight: bolder;
+    letter-spacing: 0.05rem;
+    background-color: #00EAD0;
+    transition: 0.05s; }
+  main .formulario .botones-contacto .boton-reset {
+    width: 9rem;
+    background: #202020;
+    margin: 0 0 30px;
+    color: #00EAD0;
+    border: none;
+    text-transform: uppercase; }
+  main .formulario .botones-contacto .boton-reset:hover {
+    color: #202020;
+    font-weight: bolder;
+    background-color: #00EAD0;
+    transition: 0.05s; }
+
+main .iconos {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-around;
+  margin: 10px 0 30px; }
+  main .iconos .iconos-contacto-elemento {
+    border-radius: 50%;
+    border: 2px solid #00EAD0; }
+  main .iconos .iconos-h1 {
+    font-size: 1rem;
+    margin: 0 0 10px; }
+
+.footer-contacto {
+  position: relative;
+  top: 10rem; }
+
+@media screen and (min-width: 600px) {
+  main .formulario {
+    width: auto; }
+  main .formulario .campos input,
+  textarea {
+    width: 75%; }
+  main .formulario {
+    width: 75%; }
+  main .iconos {
+    width: 75%;
+    margin: 0 auto;
+    justify-content: space-around; } }
+
+@media screen and (min-width: 1024px) {
+  main {
+    max-width: 90rem;
+    width: 90rem; }
+  /* ------------inicio------ */
+  /* mi propuesta */
+  main .propuesta {
+    border: 1px solid #00EAD0;
+    border-radius: 12px;
+    margin: 10px 30px;
+    background: #202020; }
+  main .propuesta:hover {
+    background-color: #353030b3;
+    zoom: 1.2; }
+  /* lo necesitas */
+  main .img-der-e-tex-izq {
+    flex-direction: row-reverse;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap; }
+  main .img-der-e-tex-izq .texto-publico-objetivo {
+    width: 60%; }
+  /* --------------sobre mi ------------ */
+  .h2-sobre-mi {
+    display: block; }
+  main .containergrid {
+    display: grid;
+    grid-template-rows: 2fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "text1 text1 img1" "img2 text2 text2";
+    row-gap: 1rem; }
+  .containergrid .text-pequenia-biografia {
+    grid-area: text1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+  .containergrid .img-pequenia-biografia {
+    grid-area: img1; }
+  .containergrid .img-bio-personal {
+    grid-area: img2; }
+  .containergrid .text-bio-personal {
+    grid-area: text2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 12px; }
+  /* --------- diseÃ±o sitio web ----------  */
+  .img-izq-tex-der {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row-reverse;
+    align-items: center; }
+  main .bloque-dos-tex-diseÃ±o-landing-page {
+    display: flex; }
+  main .iconos {
+    width: 50%; } }
+
+@media screen and (max-width: 574.44px) {
+  .navbar-brand {
+    display: none; } }
+
+@media screen and (min-width: 600px) {
+  header {
+    display: flex;
+    justify-content: center;
+    width: auto; }
+  main {
+    max-width: 50rem;
+    margin: 0 auto; } }

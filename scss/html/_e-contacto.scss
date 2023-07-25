@@ -1,0 +1,120 @@
+@import "../utilidades/a-variables";
+@import "../utilidades/c-mixing";
+@import "../utilidades/b-extend";
+
+main {
+
+    .formulario {
+        border: 3px solid $color-tres;
+        border-radius: 20px;
+        width: 100%;
+        height: auto;
+        align-items: center;
+        margin: 20px auto;
+
+        fieldset {
+            border: none;
+
+            legend {
+                font-family: 'Poppins', sans-serif;
+                font-size: $tamanio-regular;
+                font-weight: bolder;
+                padding: 10px 10px;
+            }
+
+            .campos input,
+            textarea {
+                width: 18rem;
+                height: auto;
+                border: 2px solid $color-tres;
+                border-radius: 10px;
+                margin: 5px;
+                color: $color-dos;
+                outline: none;
+                padding: 0.3rem;
+            }
+        }
+
+        .botones-contacto {
+            .boton-submit {
+                width: 5rem;
+                background: #202020;
+                margin: 0 0 30px;
+                color: #00EAD0;
+                border: none;
+                text-transform: uppercase;
+            }
+
+            .boton-submit:hover {
+                color: #202020;
+                font-weight: bolder;
+                letter-spacing: 0.05rem;
+                background-color: #00EAD0;
+                transition: 0.05s;
+            }
+
+            .boton-reset {
+                width: 9rem;
+                background: #202020;
+                margin: 0 0 30px;
+                color: #00EAD0;
+                border: none;
+                text-transform: uppercase;
+            }
+
+            .boton-reset:hover {
+                color: #202020;
+                ;
+                font-weight: bolder;
+                background-color: #00EAD0;
+                transition: 0.05s;
+
+            }
+        }
+    }
+
+    .iconos {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: space-around;
+        margin: 10px 0 30px;
+
+        .iconos-contacto-elemento {
+            border-radius: 50%;
+            border: 2px solid $color-tres;
+        }
+
+        .iconos-h1 {
+            font-size: $tamanio-regular;
+            margin: 0 0 10px;
+        }
+    }
+}
+
+.footer-contacto{
+    position: relative;
+    top: 10rem;
+}
+
+
+@media screen and (min-width: 600px) {
+    main .formulario {
+        width: auto;
+    }
+
+    main .formulario .campos input,
+    textarea {
+        width: 75%;
+    }
+
+    main .formulario {
+        width: 75%;
+    }
+
+    main .iconos{
+        width: 75%;
+        margin: 0 auto;
+        justify-content: space-around;
+    }
+}

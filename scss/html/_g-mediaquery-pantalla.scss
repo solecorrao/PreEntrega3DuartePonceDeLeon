@@ -1,0 +1,99 @@
+@media screen and (min-width: 1024px) {
+    main {
+        max-width: 90rem;
+        width: 90rem;
+    }
+
+    /* ------------inicio------ */
+
+    /* mi propuesta */
+    main .propuesta {
+        border: 1px solid #00EAD0;
+        border-radius: 12px;
+        margin: 10px 30px;
+        background: #202020;
+    }
+
+    main .propuesta:hover{
+        background-color: #353030b3;
+        zoom: 1.2   ;
+    }
+
+    /* lo necesitas */
+    main .img-der-e-tex-izq{
+     flex-direction: row-reverse;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    }
+
+    main .img-der-e-tex-izq .texto-publico-objetivo{
+        width: 60%;
+    }
+    /* --------------sobre mi ------------ */
+
+    .h2-sobre-mi {
+        display: block;
+    }
+
+
+    main .containergrid {
+        display: grid;
+        grid-template-rows: 2fr;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+            "text1 text1 img1"
+            "img2 text2 text2";
+        row-gap: 1rem;
+    }
+
+    .containergrid .text-pequenia-biografia {
+        grid-area: text1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .containergrid .img-pequenia-biografia {
+        grid-area: img1;
+    }
+
+    .containergrid .img-bio-personal {
+        grid-area: img2;
+    }
+
+    .containergrid .text-bio-personal {
+        grid-area: text2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0 12px;
+    }
+
+
+
+      /* --------- diseÃ±o sitio web ----------  */
+
+      
+      .img-izq-tex-der{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+      main .bloque-dos-tex-diseÃ±o-landing-page{
+        display: flex;
+      }
+
+    // contacto
+
+
+    main .iconos{
+        width: 50%;
+    }
+
+}

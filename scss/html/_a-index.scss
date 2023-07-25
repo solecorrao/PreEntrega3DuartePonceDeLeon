@@ -1,0 +1,160 @@
+@import "../utilidades/a-variables";
+@import "../utilidades/b-extend";
+@import "../utilidades/c-mixing";
+
+main .presentacion {
+    .holamundo {
+        margin: 20px 0px 1px;
+
+        h1 {
+            font-size: $tamanio-nor-titulo;
+            text-shadow: 1px 1px 15px $color-tres;
+            line-height: 1.9rem;
+
+            span {
+                font-size: 1.3rem;
+                line-height: 0.5rem;
+                display: flex;
+                justify-content: center;
+                margin: 3px 0px 15px;
+            }
+
+        }
+
+        h1::first-letter {
+            font-family: 'Poppins';
+            font-size: 3rem;
+            color: #00EAD0;
+        }
+
+        p {
+            line-height: 1.4rem;
+            font-size: 1.4rem;
+            text-align: center;
+            margin: 20px;
+        }
+    }
+
+    .fotopresentacion .img_uno {
+        width: 100%;
+    }
+
+    .fotopresentacion .img_dos {
+        display: none;
+    }
+}
+
+/* ---------------------- propuesta de valor  */
+
+main .propuesta {
+    border: 1px solid $color-tres;
+    border-radius: 12px;
+    margin: 10px 30px;
+    background: #353030b3;
+
+    p {
+        @include parrafos;
+        margin: 20px 20px;
+    }
+}
+
+main .img-der-e-tex-izq {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column-reverse;
+
+    .texto-publico-objetivo {
+        display: flex;
+        align-items: center;
+
+        p {
+            @include parrafos;
+            margin: 20px 25px;
+        }
+    }
+}
+
+@media screen and (min-width: 600px) {
+
+    header {
+        justify-content: center;
+    }
+
+    main {
+        max-width: 50rem;
+        margin: 0 auto;
+    }
+
+    .img-general {
+        height: 20rem;
+    }
+
+    main .presentacion {
+        display: flex;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        max-width: 622px;
+    }
+
+    main .presentacion .holamundo {
+        width: 18rem;
+        position: relative;
+        left: 70px;
+        margin: 0;
+    }
+
+    main .presentacion .holamundo h1 {
+        text-align: center;
+        font-size: 3.5rem;
+        line-height: 2.8rem;
+        margin-bottom: 17px;
+    }
+
+    main .presentacion .holamundo h1 span {
+        display: flex;
+        justify-content: center;
+        margin: 4px;
+    }
+
+    main .presentacion .holamundo h1::first-letter {
+        font-size: 4rem;
+    }
+
+    main .presentacion .holamundo p {
+        font-size: 1.5rem;
+        text-align: center;
+        line-height: 1.5rem;
+        margin: 0px;
+    }
+
+    main .presentacion .fotopresentacion {
+        width: 280px;
+    }
+
+    main .presentacion .fotopresentacion img {
+        height: 400px;
+    }
+
+    main .presentacion .fotopresentacion .img_uno {
+        display: none;
+    }
+
+    main .presentacion .fotopresentacion .img_dos {
+        display: block;
+        justify-content: center;
+    }
+
+    /* ----------------¿Lo necesitas ? ----------- */
+
+    main .img-izq-tex-der p {
+        margin: 20px 5px 20px 15px;
+    }
+
+    main .img-izq-tex-der img {
+        margin: 20px 15px 20px 5px;
+    }
+}

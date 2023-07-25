@@ -1,0 +1,126 @@
+// utilidades
+@import "utilidades/a-variables";
+@import "utilidades/b-extend";
+@import "utilidades/c-mixing";
+
+// ------------------ configuracion global ------------------
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: $color-uno;
+}
+
+body,
+header {
+    background-color: $color-dos;
+    min-width: 25rem;
+}
+
+header {
+    position: sticky;
+    top: 0px;
+    z-index: 500;
+    margin: 0 auto;
+    background-color: $color-tres;
+    display: flex;
+    justify-content: start;
+    .logo-personal img {
+        height: 50px;
+    }
+}
+
+// ------------------ bloques compartidos ------------------
+
+h2,
+h3 {
+    font-family: 'Poppins';
+    font-size: $tamanio-reg-titulo;
+    color: $color-uno;
+}
+
+.img-general {
+    margin: 10px 0px;
+    border: 5px solid $color-tres;
+    border-radius: 20px;
+    height: 15rem;
+}
+
+// ------------------ ir a contactar 
+
+main .ir-a-contactar {
+    @include bordes-botones;
+}
+
+a {
+    text-decoration: none;
+    color: $color-uno;
+}
+
+main .ir-a-contactar:hover {
+    background-color: $color-tres;
+    border: none;
+}
+
+main .ir-a-contactar a:hover {
+    font-weight: bold;
+    color: $color-dos
+}
+
+// ------------------ Volver arriba
+
+main .boton-arriba {
+    @include boton-volver-arriba;
+
+    a {
+        text-align: center;
+        position: relative;
+        color: $color-uno;
+    }
+}
+
+// ------------------ footer
+footer p {
+    text-align: center;
+    font-size: $tamanio-footer;
+}
+
+// ------------------ tamanio celular (mobile first)
+main {
+    max-width: 20rem;
+    margin: 0 auto;
+}
+
+// --------------------------------------- html ----------------------//
+
+@import "html/a-index";
+@import "html/b-sobre-mi";
+@import "html/c-servicios";
+@import "html/d-portfolio";
+@import "html/e-contacto";
+@import "html/g-mediaquery-pantalla";
+
+
+// este es el breakpoints de bootstrap, para el nav 
+@media screen and (max-width: 574.44px) {
+    .navbar-brand {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    header{
+        display: flex;
+        justify-content: center;
+        width: auto;
+    }
+
+    main {
+        max-width: 50rem;
+        margin: 0 auto;
+    }
+}

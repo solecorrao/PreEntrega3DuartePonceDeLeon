@@ -1,0 +1,26 @@
+@import "../utilidades/a-variables";
+@import "../utilidades/b-extend";
+@import "../utilidades/c-mixing";
+
+
+                                      
+main .containergrid{
+    @extend %propiedades-flex;
+    h1{
+        @include titulo
+    }
+    p{
+        @include parrafos;
+    }
+    .gift-sobre-mi{
+        @extend .img-general;
+        border: none;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    main{
+        width: 600px;
+        padding: 0 20px;
+    }
+}

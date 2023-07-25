@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Brian Ezequiel Duarte Ponce de León">
+    <meta name="description" content="Portfolio de Desarrollo Web, UX y Marketing de Brian Ezequiel Duarte Ponce de León">
+    <meta name="keywords" content= "html, javaScript, CSS, React, ux, ui, redes sociales">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../img/logoezequiel.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@300;700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Contacto-BEDPL</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm">
+            <div class="container-fluid">
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler"
+                    aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbar-toggler">
+
+                    <a class="navbar-brand logo-personal" href="../index.html"><img src="../img/logoezequiel.svg"
+                            alt="logo marca personal" width="50" height="auto"></a>
+
+                    <ul class="navbar-nav d-flex justify-content-start align-items-start">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sobre-mi.html" aria-current="page">Sobre mí</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <form class="formulario">
+            <fieldset>
+                <legend>Si tienes alguna duda o consulta, no dudes en dejarme tu mensaje</legend>
+
+                <!-- campos -->
+                <section class="campos">
+                    <div class="contacto-completar-nombre">
+                        <label for="contactonombre"></label>
+                        <input type="text" id="contactonombre" placeholder="Completa tú nombre, ej: 'Juan Garcia'.">
+                    </div>
+
+                    <div class="contacto-mail ">
+                        <label for="emaildecontacto"></label>
+                        <input type="email" id="emaildecontacto"
+                            placeholder="Completa tu mail, ej: juan-garcia@mail.com">
+                    </div>
+
+                    <div class="contacto-telefono">
+                        <label for="telefonodecontacto"></label>
+                        <input type="tel" id="telefonodecontacto"
+                            placeholder="Ingresa tu teléfono, ej: (+xx) xx xx-xxxx-xx">
+                    </div>
+
+                    <div class="contacto-pais-origen">
+                        <label for="paisorigen"></label>
+                        <input type="text" id="paisorigen" placeholder="País de residencia, ej: 'Chile'.">
+                    </div>
+
+                    <div class="contacto-mesaje-de-consulta">
+                        <label for="mensaje"></label>
+                        <textarea cols="10" rows="5" id="mensaje"
+                            placeholder="Ingrese su consultata aquí..."></textarea>
+                    </div>
+
+                    <div class="botones-contacto">
+                        <input class="boton-submit" type="submit">
+                        <input class="boton-reset" type="reset">
+                    </div>
+                </section>
+
+            </fieldset>
+        </form>
+
+        <div class="iconos">
+            <h1 class="iconos-h1">Tambien puedes contactarme por mis redes sociales</h1>
+
+            <div class="iconos-contacto">
+                <a target="_blank" href="https://www.facebook.com/"><img class="iconos-contacto-elemento"
+                        src="../img/ico-facebook.svg" alt="enlace a facebook"></a>
+            </div>
+            <div class="iconos-contacto">
+                <a target="_blank" href="https://www.instagram.com/eze_papadeandy/"><img
+                        class="iconos-contacto-elemento" src="../img/ico-instagram.svg" alt="enlace a instagram"></a>
+            </div>
+            <div class="iconos-contacto">
+                <a target="_blank" href="https://github.com/bezequield"><img class="iconos-contacto-elemento"
+                        src="../img/ico-github.svg" alt="enlace a github"></a>
+            </div>
+            <div class="iconos-contacto">
+                <a target="_blank" href="https://www.linkedin.com/in/bezequielduarteponcedele%C3%B3n/"><img
+                        class="iconos-contacto-elemento" src="../img/ico-linkedln.svg" alt="enlace a linkedln"></a>
+            </div>
+        </div>
+
+
+
+
+
+    </main>
+
+    <footer class="footer-contacto">
+        <p>&#169Todos los derechos reservados Ezequiel Ponce de León</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
+</main>
